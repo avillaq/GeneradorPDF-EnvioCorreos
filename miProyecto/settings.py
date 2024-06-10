@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "tecnologia.apps.TecnologiaConfig",
     "generadorPDF.apps.GeneradorpdfConfig",
+    "envioEmail.apps.EnvioemailConfig",
 ]
 
 MIDDLEWARE = [
