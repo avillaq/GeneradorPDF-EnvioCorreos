@@ -12,7 +12,8 @@ class GeneratePDF(View):
             'invoice_id': 123, 
             'customer_name': 'Jhon Cooper',
             'amount': 1399.99,
-            'today': "today",
+            'date': "today",
         }
         html = template.render(context)
-        return HttpResponse(html)
+        pdf = render_to_pdf('invoice.html', context)
+        return HttpResponse(pdf, content_type='application/pdf')
