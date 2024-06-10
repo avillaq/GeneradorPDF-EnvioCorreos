@@ -3,9 +3,9 @@ from django.core.mail import send_mail
 
 # Create your views here.
 def index(request):
-    send_mail("Hello from PrettyPrinted",
-             "Hello there, This is an automated message.",
-             "sirahib555@morxin.com",
+    send_mail("Hola desde mi proyecto en Django!",
+             "Hola, este es un mensaje automatizado.",
+             "villafuertequispealex@gmail.com",
              ["kaviyof447@cnurbano.com"],
             fail_silently=False
     )
