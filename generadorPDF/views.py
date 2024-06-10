@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic import View
 from django.template.loader import get_template
 
-from renderers import render_to_pdf
+from .renderers import render_to_pdf
 
 class GeneratePDF(View):
     def get(self, request, *args, **kwargs):
